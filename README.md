@@ -43,3 +43,19 @@ The full list of requirements is in [docs/requirements.md](docs/requirements.md)
 | Indication    | Tilt warning LED                                        |
 | Controls      | Tare and Zero buttons, reset button                     |
 | Programming   | UART bootloader (boot jumper), SWD header               |
+
+## Project history
+
+The scale was my bachelor's thesis at Bauman Moscow State Technical University
+(Department of Design and Production Technology of Electronic Equipment, IU4), completed
+in spring 2026. Within the thesis I designed the electronics and the PCB in Altium
+Designer and the enclosure in KOMPAS-3D, prepared the design documentation to GOST
+standards, assembled a prototype and tested it with reference weights. The original
+firmware was written in C for Keil MDK.
+
+This repository publishes the design and continues the work on it:
+
+- design documentation: block diagram, schematic, bill of materials, PCB and enclosure;
+- firmware ported from Keil to the GNU Arm toolchain, refactored and built in CI;
+- better signal processing: filtering, calibration and tilt compensation;
+- the prototype re-tested over the full weighing range.
