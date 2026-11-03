@@ -29,6 +29,8 @@ warns the operator, who levels it with the adjustable feet.
 | Operating conditions | +10…+25 °C, up to 80 % RH               |
 | Overall dimensions   | within 300 × 300 × 200 mm               |
 
+The full list of requirements is in [docs/requirements.md](docs/requirements.md).
+
 ## Hardware
 
 | Block         | Component                                              |
