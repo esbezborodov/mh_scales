@@ -59,3 +59,32 @@ This repository publishes the design and continues the work on it:
 - firmware ported from Keil to the GNU Arm toolchain, refactored and built in CI;
 - better signal processing: filtering, calibration and tilt compensation;
 - the prototype re-tested over the full weighing range.
+
+## Repository layout
+
+```
+mh_scales/
+├── docs/          requirements, photos, test results
+├── hardware/      block diagram, schematic, BOM, PCB, GOST drawings (PDF)
+├── enclosure/     STEP and STL models, assembly drawing
+├── firmware/      MH1706 firmware (C, GCC, CMake)
+└── tools/         UART flashing utility
+```
+
+Folders are added as the corresponding part of the project is published.
+
+## Status
+
+- [x] Requirements
+- [ ] Block diagram
+- [ ] Schematic and bill of materials
+- [ ] PCB
+- [ ] Enclosure
+- [ ] Firmware: GCC build and flashing tool
+- [ ] Firmware: drivers and application
+- [ ] Signal processing, calibration and tilt compensation
+- [ ] Test results, v1.0
+
+## License
+
+Released under the MIT License, see [LICENSE](LICENSE).
