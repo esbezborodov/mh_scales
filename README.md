@@ -44,6 +44,8 @@ The full list of requirements is in [docs/requirements.md](docs/requirements.md)
 | Controls      | Tare and Zero buttons, reset button                     |
 | Programming   | UART bootloader (boot jumper), SWD header               |
 
+The block diagram and the description of each block are in [hardware/](hardware/README.md).
+
 ## Project history
 
 The scale was my bachelor's thesis at Bauman Moscow State Technical University
@@ -76,7 +78,7 @@ Folders are added as the corresponding part of the project is published.
 ## Status
 
 - [x] Requirements
-- [ ] Block diagram
+- [x] Block diagram
 - [ ] Schematic and bill of materials
 - [ ] PCB
 - [ ] Enclosure

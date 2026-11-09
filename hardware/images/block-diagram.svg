@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" font-family="DejaVu Sans, Helvetica, Arial, sans-serif">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#24292f"/></marker>
+<marker id="b" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#24292f"/></marker>
+<style>
+.t{font-size:15px;font-weight:bold;fill:#24292f;text-anchor:middle}
+.s{font-size:12.5px;fill:#57606a;text-anchor:middle}
+.l{font-size:11.5px;fill:#57606a;text-anchor:middle}
+.n{font-size:13.5px;fill:#24292f;text-anchor:middle}
+.f{font-size:12px;fill:#57606a;font-style:italic}
+.h{font-size:13px;font-weight:bold;fill:#8c959f;letter-spacing:1px}
+</style>
+</defs>
+<rect width="1000" height="640" fill="#ffffff"/>
+<text x="30" y="32" class="h">Signals</text>
+<text x="30" y="512" class="h">Power</text>
+<line x1="20" y1="488" x2="980" y2="488" stroke="#d0d7de" stroke-width="1"/>
+<rect x="30" y="50" width="170" height="60" rx="6" fill="#f6f8fa" stroke="#24292f" stroke-width="1.5"/>
+<text x="115.0" y="76.0" class="t">Load cell</text>
+<text x="115.0" y="95.0" class="s">single-point, 20 kg</text>
+<rect x="270" y="50" width="190" height="60" rx="6" fill="#f6f8fa" stroke="#24292f" stroke-width="1.5"/>
+<text x="365.0" y="76.0" class="t">ADC</text>
+<text x="365.0" y="95.0" class="s">HX711, 24-bit</text>
+<rect x="270" y="150" width="190" height="60" rx="6" fill="#f6f8fa" stroke="#24292f" stroke-width="1.5"/>
+<text x="365.0" y="176.0" class="t">Accelerometer</text>
+<text x="365.0" y="195.0" class="s">ADXL345</text>
+<rect x="270" y="250" width="190" height="50" rx="6" fill="#f6f8fa" stroke="#24292f" stroke-width="1.5"/>
+<text x="365.0" y="280.0" class="t">Tare button</text>
+<rect x="270" y="320" width="190" height="50" rx="6" fill="#f6f8fa" stroke="#24292f" stroke-width="1.5"/>
+<text x="365.0" y="350.0" class="t">Zero button</text>
+<rect x="270" y="400" width="190" height="60" rx="6" fill="#f6f8fa" stroke="#24292f" stroke-width="1.5"/>
+<text x="365.0" y="426.0" class="t">UART header</text>
+<text x="365.0" y="445.0" class="s">bootloader, debug</text>
+<rect x="560" y="50" width="180" height="410" rx="6" fill="#ddf4ff" stroke="#24292f" stroke-width="1.5"/>
+<text x="650.0" y="251.0" class="t">Microcontroller</text>
+<text x="650.0" y="270.0" class="s">MegaHunt MH1706</text>
+<rect x="810" y="150" width="170" height="60" rx="6" fill="#f6f8fa" stroke="#24292f" stroke-width="1.5"/>
+<text x="895.0" y="176.0" class="t">Display</text>
+<text x="895.0" y="195.0" class="s">LCD1602, I2C</text>
+<rect x="810" y="300" width="170" height="60" rx="6" fill="#f6f8fa" stroke="#24292f" stroke-width="1.5"/>
+<text x="895.0" y="326.0" class="t">Tilt indicator</text>
+<text x="895.0" y="345.0" class="s">LED</text>
+<path d="M200,80 L270,80" fill="none" stroke="#24292f" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="235" y="72" class="l">bridge</text>
+<path d="M460,80 L560,80" fill="none" stroke="#24292f" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="510" y="72" class="l">DOUT, PD_SCK</text>
+<path d="M460,180 L560,180" fill="none" stroke="#24292f" stroke-width="1.5" marker-end="url(#a)" marker-start="url(#b)"/>
+<text x="510" y="172" class="l">I2C, INT1/2</text>
+<path d="M460,275 L560,275" fill="none" stroke="#24292f" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="510" y="267" class="l">GPIO</text>
+<path d="M460,345 L560,345" fill="none" stroke="#24292f" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="510" y="337" class="l">GPIO</text>
+<path d="M460,430 L560,430" fill="none" stroke="#24292f" stroke-width="1.5" marker-end="url(#a)" marker-start="url(#b)"/>
+<text x="510" y="422" class="l">RX, TX</text>
+<path d="M740,180 L810,180" fill="none" stroke="#24292f" stroke-width="1.5" marker-end="url(#a)" marker-start="url(#b)"/>
+<text x="775" y="172" class="l">I2C</text>
+<path d="M740,330 L810,330" fill="none" stroke="#24292f" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="775" y="322" class="l">GPIO</text>
+<rect x="30" y="530" width="170" height="56" rx="6" fill="#f6f8fa" stroke="#24292f" stroke-width="1.5"/>
+<text x="115.0" y="554.0" class="t">USB mini-B</text>
+<text x="115.0" y="573.0" class="s">5 V input</text>
+<rect x="270" y="530" width="190" height="56" rx="6" fill="#f6f8fa" stroke="#24292f" stroke-width="1.5"/>
+<text x="365.0" y="554.0" class="t">3.3 V regulator</text>
+<text x="365.0" y="573.0" class="s">on-chip, MH1706</text>
+<rect x="560" y="525" width="420" height="40" rx="6" fill="#ffffff" stroke="#8c959f" stroke-width="1.2"/>
+<text x="770.0" y="550.0" class="n">ADC and load cell, accelerometer, buttons, LED, UART</text>
+<rect x="560" y="580" width="420" height="40" rx="6" fill="#ffffff" stroke="#8c959f" stroke-width="1.2"/>
+<text x="770.0" y="605.0" class="n">MCU supply input, display</text>
+<text x="810" y="420" class="f">Accelerometer and display</text>
+<text x="810" y="436" class="f">share one I2C bus.</text>
+<path d="M200,548 L270,548" fill="none" stroke="#24292f" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#a)"/>
+<text x="235" y="540" class="l">5 V</text>
+<path d="M460,545 L560,545" fill="none" stroke="#24292f" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#a)"/>
+<text x="510" y="537" class="l">3.3 V</text>
+<path d="M200,572 L230,572 L230,600 L560,600" fill="none" stroke="#24292f" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#a)"/>
+<text x="510" y="592" class="l">5 V</text>
+</svg>
