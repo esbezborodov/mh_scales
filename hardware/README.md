@@ -15,7 +15,7 @@ display shows the result, and two buttons control the tare.
 
 | Block          | Component                         | Function                                                                  |
 |----------------|-----------------------------------|---------------------------------------------------------------------------|
-| Load cell      | 01022-010K-C3, single-point, 20 kg | Converts the load into a millivolt bridge signal                         |
+| Load cell      | Keli AM1, single-point, 20 kg      | Converts the load into a millivolt bridge signal                         |
 | ADC            | HX711                             | Amplifies the bridge signal (PGA ×128) and converts it at 24-bit resolution; powers the bridge |
 | Accelerometer  | ADXL345                           | Measures the gravity vector on three axes to find the tilt of the scale   |
 | Microcontroller| MegaHunt MH1706                   | Reads the sensors, filters the data, computes mass and tilt, drives the display and the indicator |

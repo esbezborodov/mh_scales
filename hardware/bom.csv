@@ -1,0 +1,26 @@
+Designator,Qty,Value,Description,Manufacturer,Part number,Package
+"C1, C3, C5, C6, C8, C9, C10, C11, C12, C14",10,100 nF,"Ceramic capacitor, X7R, 25 V, ±10%",Murata,GRM21BR71E104KA01L,0805
+"C2, C13, C15",3,1 µF,"Ceramic capacitor, X7R, 16 V, ±10%",Murata,GRM21BR71C105K,0805
+"C4, C7",2,10 µF,"Ceramic capacitor, X5R, 10 V, ±10%",Murata,GRM21BR61A106K,0805
+DA1,1,HX711,"24-bit ADC for bridge sensors",Avia Semiconductor,HX711,SOP-16
+DD1,1,MH1706,"32-bit microcontroller",MegaHunt,MH1706,QFN-32
+DD2,1,ADXL345,"3-axis digital accelerometer, I2C/SPI",Analog Devices,ADXL345BCCZ-RL7,LGA-14
+"R1, R5, R16, R17, R18, R20, R21",7,0 Ω,"Jumper resistor",Yageo,RC0805JR-070RL,0805
+"R2, R3, R6, R7",4,22 Ω,"Thick film resistor, ±1%, 0.125 W",Yageo,RC0805FR-0722RL,0805
+R4,1,510 Ω,"Thick film resistor, ±5%, 0.125 W",Yageo,RC0805JR-07510RL,0805
+"R8, R9, R14, R15, R25",5,10 kΩ,"Thin film resistor, ±0.1%, 0.125 W",Yageo,RT0805BRD0710KL,0805
+"R10, R11",2,100 Ω,"Thin film resistor, ±0.1%, 0.125 W",Yageo,RT0805BRD07100RL,0805
+R12,1,6.8 kΩ,"Thick film resistor, ±1%, 0.125 W",Yageo,RC0805FR-076K8L,0805
+R13,1,1 kΩ,"Thin film resistor, ±0.1%, 0.125 W",Yageo,RT0805BRD071KL,0805
+R19,1,20 Ω,"Thick film resistor, ±5%, 0.125 W",Yageo,RC0805JR-0720RL,0805
+"R22, R23",2,4.7 kΩ,"Thick film resistor, ±1%, 0.125 W",Yageo,RC0805FR-074K7L,0805
+R24,1,270 Ω,"Thick film resistor, ±5%, 0.125 W",Yageo,RC0805JR-07270RL,0805
+SW1,1,Reset,"Tactile switch, 6 × 3 × 2.5 mm",Ruichi,IT-1181A,SMD
+SW2,1,Boot,"Pin header with jumper, 2.54 mm",KLS,KLS1-203A,THT
+VT1,1,BC807-25,"PNP transistor, 45 V, 0.5 A",Nexperia,"BC807-25,215",SOT-23
+"XS1, XS2, XP2",3,PBS-2,"Socket, 2 pins, 2.54 mm",Connfly,PBS-2,THT
+XS3,1,PLS-5,"Pin header, 5 pins, 2.54 mm",Connfly,PLS-5,THT
+XS4,1,XH 3P,"Wire-to-board connector, 3 pins, 2.5 mm",JST,XH 2.5 mm 3P,THT
+XP1,1,XH 4P,"Wire-to-board connector, 4 pins, 2.5 mm",JST,XH 2.5 mm 4P,THT
+XS5,1,Mini-USB B,"USB 2.0 Mini-B receptacle",TE Connectivity,,SMD
+SG1,1,Load cell,"Single-point load cell, 20 kg (off-board)",Keli Sensing Technology,AM1,

@@ -37,7 +37,7 @@ The full list of requirements is in [docs/requirements.md](docs/requirements.md)
 |---------------|--------------------------------------------------------|
 | MCU           | MegaHunt MH1706, 32-bit RISC core, up to 80 MHz         |
 | ADC           | Avia Semiconductor HX711, 24-bit sigma-delta, PGA ×128  |
-| Load cell     | 01022-010K-C3, single-point, rated for 20 kg            |
+| Load cell     | Keli AM1, single-point, rated for 20 kg                 |
 | Accelerometer | Analog Devices ADXL345, 3-axis, I2C                     |
 | Display       | LCD1602 with I2C interface                              |
 | Indication    | Tilt warning LED                                        |
