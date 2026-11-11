@@ -87,3 +87,29 @@ connect to the board through XS1, XS2, XP1, XP2 and the SG1 pads.
 | 14     | PA12              | Zero button, active low           | XS2.1, R14 pull-up                 |
 
 Not connected: PA6, PA13, PA15, PB0–PB4, CHG_VBAT, PWR_KEY.
+
+## Circuit notes
+
+**Power.** 5 V from the USB connector feeds the MCU (CHG_VCC, VCC) and the display. The
+on-chip regulator of the MH1706 outputs 3.3 V on VDD33 for the rest of the board.
+
+**ADC.** The HX711 is supplied from 3.3 V through an RC filter, R19 (20 Ω) and C7 (10 µF).
+Its on-chip regulator with the external PNP transistor VT1 powers the bridge; the divider
+R15/R12 sets the excitation to 1.25 V × (10 kΩ + 6.8 kΩ) / 6.8 kΩ ≈ 3.1 V. The bridge
+output passes a differential RC filter, R10, R11 (100 Ω) and C6 (100 nF), with a cut-off
+near 8 kHz. Channel B is not used (INB± tied to AGND), RATE is tied low for 10 samples
+per second, and XI is tied low to run the on-chip oscillator.
+
+**Grounds.** Analog (AGND) and digital (DGND) grounds join at one point through R16 (0 Ω).
+
+**I2C.** PA11 (SDA) and PA10 (SCL) drive one bus shared by the ADXL345 and the display, with
+4.7 kΩ pull-ups R22, R23 to 3.3 V. The ADXL345 runs in I2C mode (CS tied high) at address
+0x53 (ADDR tied low). The 0 Ω resistors R17, R18 let the MCU be disconnected from the bus
+for debugging.
+
+**Reset and boot.** RST has a 10 kΩ pull-up (R8), a 1 µF capacitor (C2) and the reset
+button SW1. The jumper SW2 ties PA10 to ground to start the UART bootloader; remove it for
+normal operation, because PA10 is also the I2C clock.
+
+**Series resistors.** 22 Ω resistors on the SWD and USB lines damp ringing; 0 Ω resistors on
+UART and ADC lines leave room for rework.
