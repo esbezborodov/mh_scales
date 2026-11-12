@@ -37,14 +37,15 @@ The full list of requirements is in [docs/requirements.md](docs/requirements.md)
 |---------------|--------------------------------------------------------|
 | MCU           | MegaHunt MH1706, 32-bit RISC core, up to 80 MHz         |
 | ADC           | Avia Semiconductor HX711, 24-bit sigma-delta, PGA ×128  |
-| Load cell     | 01022-010K-C3, single-point, rated for 20 kg            |
+| Load cell     | Keli AM1, single-point, rated for 20 kg                 |
 | Accelerometer | Analog Devices ADXL345, 3-axis, I2C                     |
 | Display       | LCD1602 with I2C interface                              |
 | Indication    | Tilt warning LED                                        |
 | Controls      | Tare and Zero buttons, reset button                     |
 | Programming   | UART bootloader (boot jumper), SWD header               |
 
-The block diagram and the description of each block are in [hardware/](hardware/README.md).
+The block diagram, schematic, bill of materials and pin assignment are in
+[hardware/](hardware/README.md).
 
 ## Project history
 
@@ -79,7 +80,7 @@ Folders are added as the corresponding part of the project is published.
 
 - [x] Requirements
 - [x] Block diagram
-- [ ] Schematic and bill of materials
+- [x] Schematic and bill of materials
 - [ ] PCB
 - [ ] Enclosure
 - [ ] Firmware: GCC build and flashing tool
