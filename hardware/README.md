@@ -113,3 +113,17 @@ normal operation, because PA10 is also the I2C clock.
 
 **Series resistors.** 22 Ω resistors on the SWD and USB lines damp ringing; 0 Ω resistors on
 UART and ADC lines leave room for rework.
+
+## Known issues (rev. 1)
+
+1. **ADXL345 analog supply through 10 kΩ.** R25 sits in series with the VS pin, and VS has
+   no decoupling capacitor of its own. The datasheet allows a resistor or ferrite bead of up
+   to 100 Ω there, together with a 0.1 µF capacitor on VS. With 10 kΩ the supply current of
+   the sensor drops a noticeable voltage, and VS can fall below VDD I/O, which the datasheet
+   does not allow. The sensor works on the prototype at a low output data rate.
+   *Rework:* replace R25 with a 0–100 Ω resistor. *Rev. 2:* add a 100 nF capacitor on VS.
+2. **5 V pull-ups on the display adapter.** The PCF8574 adapter of the LCD has its own
+   4.7 kΩ pull-ups to its 5 V supply. Together with R22, R23 they lift the idle bus to about
+   4.1 V, above the absolute maximum of the ADXL345 pins.
+   *Rework:* remove the pull-ups from the adapter. *Rev. 2:* add an I2C level shifter for
+   the display, or use a 3.3 V display.
