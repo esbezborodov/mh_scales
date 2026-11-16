@@ -127,6 +127,9 @@ UART and ADC lines leave room for rework.
    4.1 V, above the absolute maximum of the ADXL345 pins.
    *Rework:* remove the pull-ups from the adapter. *Rev. 2:* add an I2C level shifter for
    the display, or use a 3.3 V display.
+3. **Floating copper on the bottom side.** In the PCB file the bottom copper pour has no net
+   assigned, so it is not connected to ground and does not work as a ground plane.
+   *Rev. 2:* assign the pour to DGND and stitch it to the top pour with vias.
 
 ## PCB
 
