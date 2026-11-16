@@ -127,3 +127,45 @@ UART and ADC lines leave room for rework.
    4.1 V, above the absolute maximum of the ADXL345 pins.
    *Rework:* remove the pull-ups from the adapter. *Rev. 2:* add an I2C level shifter for
    the display, or use a 3.3 V display.
+3. **Floating copper on the bottom side.** In the PCB file the bottom copper pour has no net
+   assigned, so it is not connected to ground and does not work as a ground plane.
+   *Rev. 2:* assign the pour to DGND and stitch it to the top pour with vias.
+
+## PCB
+
+<p align="center"><img src="images/pcb-3d.png" width="480" alt="3D view of the board"></p>
+
+| Top side | Bottom side (mirrored) |
+|----------|------------------------|
+| <img src="images/pcb-top.svg" width="380" alt="Top copper and silkscreen"> | <img src="images/pcb-bottom.svg" width="380" alt="Bottom copper"> |
+
+The 3D view is rendered in Altium Designer; the layer images are exported from the same
+project. The original drawings (in Russian) are the
+[PCB drawing](drawings/PCB-drawing.pdf) and the
+[assembly drawing](drawings/SB-assembly-drawing.pdf).
+
+| Parameter                | Value                                                    |
+|--------------------------|----------------------------------------------------------|
+| Size                     | 50 × 50 mm                                               |
+| Layers                   | 2, all components on the top side                        |
+| Material                 | FR-4, 1.5 mm                                             |
+| Accuracy class           | 4 per GOST R 53429-2009                                  |
+| Tracks                   | 0.2 mm signal, 0.4 mm power, 0.2 mm minimum clearance    |
+| Vias                     | 0.4 mm drill, 0.5 mm pad                                 |
+| Finish                   | Tin-lead HASL                                            |
+| Solder mask, silkscreen  | Green, white                                             |
+| Mounting                 | Four 3.2 mm holes on a 45 × 45 mm grid, for M3 screws    |
+
+**Layout.** The MCU sits in the middle of the board, and the connectors run along the edges:
+the load cell pads and USB on the left, UART and the reset button at the bottom, the
+programming header, the button and LED sockets and the display connector on the right. The
+ADC and its input filter are in the top-left corner, next to the load cell pads and away
+from the USB and digital lines. Decoupling capacitors sit at the supply pins of each IC.
+
+**Fabrication.** The prototype boards were made by Elektroconnect (Novosibirsk) and later
+by JLCPCB. The design needs only a standard two-layer process. The vias follow accuracy
+class 4 with a 0.05 mm annular ring; for low-cost fabs, 0.3 mm drill with 0.6 mm pad leaves
+more margin.
+
+**Designators.** On the PCB, R17 and R18 are swapped relative to the schematic. Both are
+0 Ω links in the I2C lines, so the circuit is the same.

@@ -44,7 +44,7 @@ The full list of requirements is in [docs/requirements.md](docs/requirements.md)
 | Controls      | Tare and Zero buttons, reset button                     |
 | Programming   | UART bootloader (boot jumper), SWD header               |
 
-The block diagram, schematic, bill of materials and pin assignment are in
+The block diagram, schematic, bill of materials, pin assignment and PCB are in
 [hardware/](hardware/README.md).
 
 ## Project history
@@ -81,7 +81,7 @@ Folders are added as the corresponding part of the project is published.
 - [x] Requirements
 - [x] Block diagram
 - [x] Schematic and bill of materials
-- [ ] PCB
+- [x] PCB
 - [ ] Enclosure
 - [ ] Firmware: GCC build and flashing tool
 - [ ] Firmware: drivers and application
